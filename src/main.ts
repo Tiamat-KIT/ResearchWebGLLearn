@@ -42,6 +42,23 @@ function updateClearColor(color: Array<number>){
 }
 
 /**
+ * @param 正方形描画
+ * キーボード入力を捕捉して、入力されたキーに応じたコードを実行
+ */
+
+function initBuffers(){
+  const vertices = [
+    -0.5,0.5,0,
+    -0.5,-0.5,0,
+    0.5,-0.5,0,
+    0.5,0.5,0,
+  ]
+
+  // 反時計回りで定義されたインデックス
+  const indices = [0,1,2,0,2,3]
+}
+
+/**
  * @param windowのonkeydownイベントとして追加する補助関数
  * キーボード入力を捕捉して、入力されたキーに応じたコードを実行
  */
